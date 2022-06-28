@@ -196,4 +196,11 @@ footer a:hover {
   h3 span {
     font-size: 0.9rem;
   }
+  ul {
+    margin-left: 2rem;
+  }
+
+  .my-projects p {
+    margin-left: 1rem;
+  }
 }
