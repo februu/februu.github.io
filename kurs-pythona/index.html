@@ -10,6 +10,17 @@
     <title>🌟 Ściąga z Pythona 🌟 MATURA 2023 🌟 [Darmowy PDF]</title>
   </head>
   <body>
+    <script async>
+      (function (s, u, m, o, j, v) {
+        j = u.createElement(m);
+        v = u.getElementsByTagName(m)[0];
+        j.async = 1;
+        j.src = o;
+        j.dataset.sumoSiteId =
+          "8094ab3144ba471b7803c795b117aef48bb2b40ec43e9fb9097cf15f17464e53";
+        v.parentNode.insertBefore(j, v);
+      })(window, document, "script", "//load.sumo.com/");
+    </script>
     <main>
       <div class="overlay"></div>
       <div>
@@ -71,50 +82,5 @@
         >.
       </p>
     </footer>
-    <!--  
-    <script async>
-      (function (s, u, m, o, j, v) {
-        j = u.createElement(m);
-        v = u.getElementsByTagName(m)[0];
-        j.async = 1;
-        j.src = o;
-        j.dataset.sumoSiteId =
-          "8094ab3144ba471b7803c795b117aef48bb2b40ec43e9fb9097cf15f17464e53";
-        v.parentNode.insertBefore(j, v);
-      })(window, document, "script", "//load.sumo.com/");
-    </script>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-      $("#button").on("click", function () {
-        const regex =
-          /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-        if (
-          $("#nick").val() != "" &&
-          $("#email").val() != "" &&
-          regex.test($("#email").val())
-        ) {
-          $.ajax({
-            url: "http://127.0.0.1:5000/signup",
-            type: "POST",
-            beforeSend: function (xhr) {
-              xhr.setRequestHeader("Content-Type", "application/json");
-              xhr.setRequestHeader("Accept", "application/json");
-            },
-            data: JSON.stringify({
-              nick: String($("#nick").val()),
-              email: String($("#email").val()),
-            }),
-            success: function () {
-              alert("Gotowe! Sprawdź swoją skrzynkę e-mail :)");
-              $("#nick").val("");
-              $("#email").val("");
-            },
-          });
-        } else {
-          alert("Sprawdź jeszcze raz wszystkie pola!");
-        }
-      });
-    </script>-->
   </body>
 </html>
