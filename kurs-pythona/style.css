@@ -1,0 +1,182 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Montserrat:wght@400;600&display=swap");
+
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: 400;
+}
+
+main {
+  margin-bottom: 5rem;
+}
+
+/* Background */
+body {
+  background: linear-gradient(64.06deg, #8338ec 0%, #3a86ff 100%);
+  min-height: 100vh;
+  z-index: -3;
+}
+
+.overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+img {
+  z-index: -2;
+  position: absolute;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.img-1 {
+  top: 2.5rem;
+  right: 2vw;
+}
+
+.img-2 {
+  top: 25rem;
+  left: 1vw;
+}
+
+/* Styles */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  padding-top: 5rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+.leadtext p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0 5vh;
+}
+
+input {
+  display: block;
+  width: 30rem;
+  margin-bottom: 1rem;
+  border-radius: 21px;
+  height: 3rem;
+  font-size: 1rem;
+  border: 0 solid;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+}
+
+.signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 5vw;
+}
+
+.textbox {
+  color: black;
+  padding: 0 2rem;
+}
+
+.textbox:focus {
+  outline: 0;
+}
+
+.agreement {
+  font-size: 0.8rem;
+  max-width: 30rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  font-style: italic;
+  color: rgb(182, 182, 182);
+}
+
+.button {
+  background-color: #ff006e;
+  margin: auto;
+}
+
+.button:hover {
+  background-color: #cc0058;
+  margin: auto;
+  cursor: pointer;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+footer {
+  color: white;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  background: rgb(23, 23, 31);
+}
+
+footer a {
+  color: #fd0;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #e1c300;
+}
+
+/* Utility */
+.shadow {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+}
+
+.monospace {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.yellow {
+  color: #fd0;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1530px) {
+  img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 60%;
+  }
+}
