@@ -31,7 +31,7 @@ body {
   z-index: -1;
 }
 
-img {
+.bgimg {
   z-index: -2;
   position: absolute;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -69,6 +69,21 @@ h2 {
   font-size: 1.2rem;
   text-align: center;
   margin: 0 5vh;
+}
+
+.coverbox {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover {
+  z-index: 0;
+  position: static;
+  text-align: center;
+  height: 30rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 input {
@@ -165,7 +180,7 @@ footer a:hover {
 /* Media Queries */
 
 @media only screen and (max-width: 1530px) {
-  img {
+  .bgimg {
     display: none;
   }
 }
@@ -180,4 +195,14 @@ footer a:hover {
   html {
     font-size: 60%;
   }
+}
+
+/* Utility */
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
