@@ -7,6 +7,23 @@ body {
   background-color: white;
 }
 
+a {
+  text-decoration: none;
+}
+
+.centered {
+  text-align: center;
+  margin-left: 0px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
 .mobile {
   display: none;
 }
@@ -30,6 +47,7 @@ body {
 }
 
 .hero-text {
+  text-align: center;
   -webkit-transform: translateY(-20%);
   -ms-transform: translateY(-20%);
   transform: translateY(-20%);
@@ -48,7 +66,7 @@ h2 {
 
 .wave {
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -118,11 +136,11 @@ h3 {
   margin-bottom: 0.5rem;
 }
 
-ul {
+.list {
   margin-left: 4rem;
 }
 
-.my-projects p {
+p {
   margin-left: 3rem;
 }
 
@@ -138,6 +156,10 @@ a:hover {
 
 h3 span {
   font-size: 1.5rem;
+}
+
+.icon {
+  margin: 2rem 0rem;
 }
 
 footer {
@@ -158,14 +180,14 @@ footer {
   background: rgb(23, 23, 31);
 }
 
-footer a {
+.yellow {
   color: #fd0;
-  text-decoration: none;
 }
 
-footer a:hover {
+.yellow:hover {
   color: #e1c300;
 }
+
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -200,7 +222,7 @@ footer a:hover {
     margin-left: 2rem;
   }
 
-  .my-projects p {
+  p {
     margin-left: 1rem;
   }
 }

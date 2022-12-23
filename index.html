@@ -8,7 +8,7 @@
       name="description"
       content="My personal website for sharing coding projects and music."
     />
-    <meta name="keywords" content="febru,februu" />
+    <meta name="keywords" content="febru, februu" />
     <meta name="author" content="febru" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,14 +23,32 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bg.css" />
+
     <title>✨ Febru ✨ - My all projects in one place!</title>
   </head>
   <body>
     <section class="hero noselect">
-        <div class="hero-text">
-          <h1>FebruDev<span class="blinking">_</span></h1>
-          <h2>yo,&nbsp;it's&nbsp;me</h2>
-        </div>
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div class="hero-text">
+        <h1>Febru</h1>
+        <h2>
+          all&nbsp;of&nbsp;my&nbsp;projects in&nbsp;one&nbsp;place<span
+            class="blinking"
+            >_</span
+          >
+        </h2>
       </div>
       <div class="wave">
         <svg
@@ -54,16 +72,23 @@
             class="shape-fill"
           ></path>
         </svg>
+      </div>
     </section>
     <section class="my-projects">
       <h3><span>💻</span> My&nbsp;coding projects</h3>
-      <ul>
+      <ul class="list">
+        <li>Coming soon (<a href="">Click&nbsp;here</a>)</li>
+      </ul>
+    </section>
+    <section class="my-projects">
+      <h3><span>📦</span> My&nbsp;packs</h3>
+      <ul class="list">
         <li>--- (<a href="">Click&nbsp;here</a>)</li>
       </ul>
     </section>
     <section class="my-projects">
       <h3><span>🎵</span> My&nbsp;music</h3>
-      <ul>
+      <ul class="list">
         <li>
           febru&nbsp;- Night (<a
             href="https://youtu.be/0372BYP9Uw4"
@@ -72,7 +97,7 @@
           >)
         </li>
       </ul>
-      <ul>
+      <ul class="list">
         <li>
           febru&nbsp;- in&nbsp;memoriam (<a
             href="https://youtu.be/YS1ajto6h14"
@@ -81,7 +106,7 @@
           >)
         </li>
       </ul>
-      <ul>
+      <ul class="list">
         <li>
           febru&nbsp;- stoję na szczycie (<a
             href="https://youtu.be/54NhUPKkHMM"
@@ -123,6 +148,7 @@
     <footer>
       <p>
         Made&nbsp;with&nbsp;❤️&nbsp;by&nbsp;<a
+          class="yellow"
           href="https://www.buymeacoffee.com/febru"
           target="”_blank”"
           >@februu</a
