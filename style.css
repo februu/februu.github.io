@@ -2,6 +2,7 @@
   font-family: "JetBrains Mono", monospace;
   margin: 0;
   padding: 0;
+  font-size: 1rem;
 }
 body {
   background-color: white;
@@ -197,6 +198,9 @@ footer {
 }
 
 @media only screen and (max-width: 750px) {
+  * {
+    font-size: 0.8rem;
+  }
   .my-projects {
     padding: 2rem 10vw 0;
   }
