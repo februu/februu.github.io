@@ -162,8 +162,8 @@ h3 span {
   margin: 2rem 0rem;
 }
 
-.discordimg {
-  display: block;
+.discordbox {
+  width: fit-content;
   margin: 3rem auto;
 }
 
