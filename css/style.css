@@ -167,6 +167,11 @@ h3 span {
   margin: 3rem auto;
 }
 
+.discordimg {
+  padding: 0 5%;
+  width: 90%;
+}
+
 footer {
   color: white;
   position: fixed;

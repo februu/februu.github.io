@@ -12,8 +12,8 @@ body {
   color: white;
   top: 0;
   margin: 0 auto;
-  padding: 3rem 5rem 0;
-  width: 50vw;
+  padding: 3rem 10% 0;
+  width: 50%;
   background-color: rgba(0, 0, 0, 0.774);
   z-index: -1;
 }
@@ -80,5 +80,11 @@ a:hover {
   100% {
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
     transform: translatey(-5px);
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .overlay {
+    width: 80%;
   }
 }
