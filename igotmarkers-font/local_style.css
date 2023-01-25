@@ -1,0 +1,25 @@
+.idbg {
+  background-image: url("images/bg.webp");
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+}
+
+.example-chars {
+  word-break: break-all;
+  font-family: "igotmarkers";
+  font-size: 2em;
+}
+
+.example-lorem {
+  text-align: justify;
+  margin-top: 1rem;
+  font-family: "igotmarkers";
+  font-size: 1.5em;
+}

@@ -162,6 +162,11 @@ h3 span {
   margin: 2rem 0rem;
 }
 
+.discordimg {
+  display: block;
+  margin: 3rem auto;
+}
+
 footer {
   color: white;
   position: fixed;

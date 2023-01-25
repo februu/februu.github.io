@@ -12,7 +12,7 @@
     />
     <meta
       name="description"
-      content="Program for showing songs from Spotify on livestream."
+      content="My own isometric tower defense game."
     />
     <meta
       name="keywords"
@@ -47,7 +47,11 @@
     />
     <link
       rel="stylesheet"
-      href="../style.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/style.css"
     />
     <link
       rel="stylesheet"
@@ -56,113 +60,99 @@
 
     <title>✨ Febru ✨ - My all projects in one place!</title>
   </head>
-  <body>
-    <section class="hero noselect">
-      <div class="idbg"></div>
-      <div class="hero-text">
-        <h1>Island Defenders</h1>
-        <h2>
-          made by
-          <a
-            href="https://febru.me/"
-            class="yellow"
-            >febru</a
-          >, version 1.0
-        </h2>
-      </div>
-      <div class="wave">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-            opacity=".25"
-            class="shape-fill"
-          ></path>
-          <path
-            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-            opacity=".5"
-            class="shape-fill"
-          ></path>
-          <path
-            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-            class="shape-fill"
-          ></path>
-        </svg>
-      </div>
-    </section>
-    <!-- <section class="my-projects">
-      <h3><span>📘</span> About</h3>
-      <h3 class="centered bold">SpotifyOBS</h3>
-      <p class="centered">version 1.1</p>
-      <p class="centered icon">
+  <body class="disableantyaliasing">
+    <div class="overlay">
+      <div class="island-hero noselect">
+        <h2 class="animate__animated animate__headShake">Island Defenders</h2>
         <img
-          src="images/icon.webp"
-          alt="SpotifyOBS icon"
-          class="noselect"
+          class="wasp"
+          src="images/icon.png"
+          alt=""
         />
+      </div>
+
+      <h3><span>👽</span> About</h3>
+      <p>
+        <span class="cyan">Island Defenders</span> is an&nbsp;isometric tower
+        defense game which is&nbsp;played on randomly generated map. It started
+        as a&nbsp;school project in&nbsp;winter&nbsp;2022. It took about
+        4&nbsp;weeks and&nbsp;at&nbsp;least 15&nbsp;litres of&nbsp;Lipton Ice
+        Tea to&nbsp;get it finished.
       </p>
-      <p class="centered">
-        SpotifyOBS lets your viewers know which song is currently playing on
-        your livestream<br />
-        in a nice and stylish way:
+      <img
+        class="ssimg"
+        src="images/ss.webp"
+        alt="Screenshot from the game"
+      />
+      <h3><span>📜</span> Rules</h3>
+      <h4 class="cyan">Main&nbsp;Objective</h4>
+      <p>
+        Your main objective is to defend The Dark Altar which is located in the
+        middle of the&nbsp;map.
+      </p>
+      <h4 class="cyan">Enemies</h4>
+      <p>
+        There are&nbsp;two types of&nbsp;enemies: slimes and wasps. Wasps
+        are&nbsp;quick but&nbsp;fragile. Slimes are&nbsp;slower but&nbsp;have
+        more&nbsp;hp. Regardless of&nbsp;the&nbsp;type, enemies will&nbsp;always
+        go towards the&nbsp;middle attacking mines and turrets encountered on
+        their path. When they get near The&nbsp;Dark Altar they will&nbsp;attack
+        it and&nbsp;you will&nbsp;lose one of&nbsp;your precious lives.
+      </p>
+      <h4 class="cyan">Turrets</h4>
+      <p>
+        There are&nbsp;four types of turrets. Two&nbsp;of&nbsp;them are focused
+        on dealing damage (Basic Turret, Fire Turret) and two&nbsp;of&nbsp;them
+        are&nbsp;more&nbsp;support-oriented (Ice Turret, Magic Turret). Ice
+        turrets slow enemies down and&nbsp;magic turrets stun them in&nbsp;place
+        for&nbsp;three seconds.
+      </p>
+      <h4 class="cyan">Mines</h4>
+      <p>
+        Mines generate 20&nbsp;crystals every&nbsp;5&nbsp;seconds. Crystals
+        are&nbsp;in-game currency to&nbsp;buy new&nbsp;buildings
+        like&nbsp;turrets. Mines can&nbsp;only be&nbsp;placed on&nbsp;special
+        tiles which&nbsp;are&nbsp;randomly distributed around the&nbsp;map.
+      </p>
+      <h4 class="cyan">Gameplay</h4>
+      <p>
+        To build turrets or&nbsp;mines just right-click selected&nbsp;tile.
+        Building menu will&nbsp;open. You can also hover over different building
+        to&nbsp;get more&nbsp;info about their&nbsp;current&nbsp;stats. After
+        you lose all of&nbsp;your lives and&nbsp;the&nbsp;game is&nbsp;over,
+        your final score is&nbsp;calculated based&nbsp;on amount of&nbsp;mined
+        crystals, amount of&nbsp;monsters killed and difficulty level.
+      </p>
+      <h3><span>💖</span> Credits</h3>
+      <p>
+        Coding and majority&nbsp;of&nbsp;grpahics was done by&nbsp;me. Special
+        thanks to
+        <a
+          href="https://discord.com/users/313026957044350977"
+          target="_blank"
+          >DragoonXVIII#8211</a
+        >
+        for drawing enemies and providing mental support throughout
+        the&nbsp;process of&nbsp;creating this&nbsp;game lmao.
       </p>
 
-      <p class="centered">
-        <img
-          src="images/example.webp"
-          alt="example screenshot"
-          class="noselect"
-          style="height: 8rem"
-        />
-      </p>
-    </section>
-    <section class="my-projects">
-      <h3><span>🎥</span> Video Tutorial</h3>
-      <p>Coming soon...</p>
-    </section>
-    <section class="my-projects">
-      <h3><span>💻</span> Setup</h3>
-      <p>Coming soon...</p>
-    </section>
-    <section class="my-projects">
-      <h3><span>💻</span> Changelog</h3>
-      <p class="bold">version 1.1</p>
-      <ul class="list italic">
-        <li>changed content of settings.cfg file</li>
-        <li>fixed client ID bug</li>
-        <li>fixed other minor bugs</li>
-      </ul>
-    </section> -->
-    <!-- BUILD IN PROGRESS -->
-    <section class="my-projects">
-      <h3></h3>
-      <p class="centered">
-        This page is currently under construction.<br />
-        However, you can still download the game using the link below!
-      </p>
-    </section>
-    <!-- BUILD IN PROGRESS -->
-    <section class="my-projects">
       <h3><span>📥</span> Download</h3>
       <p>
         <a
           href="https://febru.me/download/island_defenders_v1.0.zip"
           download
-          >Download for Windows (.zip with executable inside) - version 1.0
-          (~1.3MB)</a
+          >Download&nbsp;for&nbsp;Windows (.zip with&nbsp;executable inside)
+          -&nbsp;version&nbsp;1.0 (~1.3MB)</a
         >
       </p>
-    </section>
-    <div style="height: 20rem"></div>
+      <div style="height: 7rem"></div>
+    </div>
+
     <footer>
       <p>
         Made&nbsp;with&nbsp;❤️&nbsp;by&nbsp;<a
           class="yellow"
-          href="https://www.buymeacoffee.com/febru"
+          href="https://febru.me/"
           target="”_blank”"
           >@februu</a
         >

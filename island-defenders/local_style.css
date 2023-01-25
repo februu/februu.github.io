@@ -1,12 +1,84 @@
-.idbg {
+body {
   background-image: url("images/bg.webp");
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.4;
+  background-attachment: fixed;
+  height: 100vh;
+  color: white;
+}
+
+.overlay {
+  color: white;
+  top: 0;
+  margin: 0 auto;
+  padding: 3rem 5rem 0;
+  width: 50vw;
+  background-color: rgba(0, 0, 0, 0.774);
+  z-index: -1;
+}
+
+.island-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.wasp {
+  height: 2rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.ssimg {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  color: white;
+}
+
+.overlay > p {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: rgb(207, 63, 255);
+}
+
+a:hover {
+  color: rgb(191, 0, 255);
+}
+
+.cyan {
+  color: #00e0d1;
+}
+
+.disableantyaliasing {
+  image-rendering: optimizeSpeed; /* STOP SMOOTHING, GIVE ME SPEED  */
+  image-rendering: -moz-crisp-edges; /* Firefox                        */
+  image-rendering: -o-crisp-edges; /* Opera                          */
+  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+  image-rendering: pixelated; /* Universal support since 2021   */
+  image-rendering: optimize-contrast; /* CSS3 Proposed                  */
+  -ms-interpolation-mode: nearest-neighbor; /* IE8+                           */
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(-5px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(0px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(-5px);
+  }
 }
