@@ -8,15 +8,15 @@ if (id != "") {
       ".json",
     function (data) {
       if (data != null) {
-        console.log(data);
-        for (let death in data["reasons"]) {
-          var dt = new Date(death * 1000);
+        let keys = Object.keys(data["reasons"]).reverse();
+        for (let death in keys) {
+          var dt = new Date(keys[death] * 1000);
           let date = dt.toLocaleString();
           $("#deathsTable").append(
             "<tr><td>" +
               date +
               "</td><td>" +
-              data["reasons"][death] +
+              data["reasons"][keys[death]] +
               "</td></tr>"
           );
         }
