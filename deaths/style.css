@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #191919;
+  color: white;
+  font-family: "Share Tech Mono", monospace;
+}
+
+main {
+  padding: 2rem 20vw 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#deathsTable {
+  border: none;
+}
+
+td {
+  padding: 15px;
+  text-align: left;
+}
+
+td:nth-child(odd) {
+  color: gray;
+}
+
+footer {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+}
+
+.yellow {
+  color: #fd0;
+}
+
+.yellow:hover {
+  color: #e1c300;
+}
