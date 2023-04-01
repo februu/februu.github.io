@@ -194,6 +194,10 @@ footer {
   color: #fd0;
 }
 
+.pink {
+  color: rgb(173, 33, 99);
+}
+
 .yellow:hover {
   color: #e1c300;
 }
