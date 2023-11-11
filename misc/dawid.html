@@ -81,12 +81,14 @@
       };
 
       const check = () => {
+        const proposition = document.querySelector("#proposition").value;
+
+        if (proposition === "") return;
+
         document.querySelector(".warning").style.visibility = "visible";
         var myList = document.getElementById("list");
         var newListItem = document.createElement("li");
-        var textNode = document.createTextNode(
-          document.querySelector("#proposition").value
-        );
+        var textNode = document.createTextNode(proposition);
         document.getElementById("proposition").blur();
         newListItem.appendChild(textNode);
         document.querySelector("#proposition").value = "";
