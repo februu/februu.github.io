@@ -1,6 +1,0 @@
-{
-  "files.exclude": {
-    "course-assets": true,
-    "python-pdf": true
-  }
-}
