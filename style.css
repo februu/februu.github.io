@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: normal;
+  font-optical-sizing: auto;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f0e5e5;
+}
+
+/* Utility */
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* Hero section */
+
+.hero {
+  height: 50vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 9.6rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+/* Main content */
+
+main {
+  margin-bottom: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 3.6rem;
+  font-weight: bold;
+  display: inline;
+  margin-left: 1.8rem;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+.section-intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+section ul li {
+  font-size: 1.8rem;
+  margin-left: 7.2rem;
+}
+
+img {
+  width: 3.6rem;
+  height: 100%;
+}
+
+a {
+  font-size: inherit;
+  text-decoration: underline;
+  color: inherit;
+}
+
+.discord-presence {
+  margin-top: 4rem;
+  width: 100%;
+  height: auto;
+}
+
+/* Footer */
+
+footer {
+  width: 100vw;
+  padding: 1.6rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+/* Animations */
+.blinking {
+  -webkit-animation: blinkingText 1s infinite;
+  animation: blinkingText 1s infinite;
+}
+
+@-webkit-keyframes blinkingText {
+  0% {
+    color: black;
+  }
+  49% {
+    color: black;
+  }
+  50% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: black;
+  }
+}
+
+@keyframes blinkingText {
+  0% {
+    color: black;
+  }
+  49% {
+    color: black;
+  }
+  50% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: black;
+  }
+}
