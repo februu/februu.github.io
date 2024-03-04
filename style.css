@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 
 * {
@@ -31,7 +38,7 @@ body {
 /* Hero section */
 
 .hero {
-  height: 50vh;
+  height: 40vh;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,6 +117,18 @@ a {
   color: inherit;
 }
 
+.discord-presence-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .discord-presence {
   margin-top: 4rem;
   width: 100%;
@@ -164,5 +183,53 @@ footer {
   }
   100% {
     color: black;
+  }
+}
+
+/* Media queries */
+
+@media screen and (max-width: 992px) {
+  * {
+    font-size: 40%;
+  }
+  .hero {
+    height: 30vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .discord-presence {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  * {
+    font-size: 30%;
+  }
+  .hero {
+    height: 20vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .discord-presence {
+    width: 80%;
   }
 }
