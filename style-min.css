@@ -28,7 +28,7 @@ h3 {
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 1rem;
   font-family: "JetBrains Mono", monospace;
   font-weight: 400;
   font-optical-sizing: auto;
@@ -54,10 +54,10 @@ body {
   justify-content: center;
 }
 h1 {
-  font-size: 9.6rem;
+  font-size: 5rem;
 }
 h3 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
 }
 main {
   margin-bottom: 7rem;
@@ -74,7 +74,7 @@ main {
   flex-direction: column;
 }
 h2 {
-  font-size: 3.6rem;
+  font-size: 2rem;
   display: inline;
   margin-left: 1.8rem;
 }
@@ -87,7 +87,7 @@ section {
   align-items: center;
 }
 section ul li {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   margin-left: 7.2rem;
 }
 img {
@@ -111,14 +111,14 @@ a {
   justify-content: center;
 }
 .discord-presence {
-  width: 100%;
+  width: auto;
   height: 100%;
   object-fit: contain;
 }
 
 footer {
   padding: 1.6rem;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 .blinking {
   -webkit-animation: 1s infinite blinkingText;
@@ -147,9 +147,6 @@ footer {
   }
 }
 @media screen and (max-width: 992px) {
-  * {
-    font-size: 40%;
-  }
   .hero {
     height: 30vh;
     width: 100vw;
@@ -163,14 +160,8 @@ footer {
     -ms-flex-pack: center;
     justify-content: center;
   }
-  .discord-presence {
-    width: 80%;
-  }
 }
 @media screen and (max-width: 680px) {
-  * {
-    font-size: 30%;
-  }
   .hero {
     height: 20vh;
     width: 100vw;
@@ -183,8 +174,5 @@ footer {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-  }
-  .discord-presence {
-    width: 80%;
   }
 }
