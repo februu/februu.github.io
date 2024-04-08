@@ -1,209 +1,75 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 62.5%;
-  font-family: "JetBrains Mono", monospace;
-  font-weight: normal;
-  font-optical-sizing: auto;
-}
+/* General styles */
+@import url(https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap);
 
 body {
-  width: 100vw;
-  min-height: 100vh;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
   background-color: #f0e5e5;
 }
 
-/* Utility */
-
-.noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
-  -moz-user-select: none; /* Old versions of Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
-}
-
-/* Hero section */
-
+/* Header styles */
 .hero {
   height: 40vh;
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-}
-
-h1 {
-  font-size: 9.6rem;
-  font-weight: bold;
   text-align: center;
 }
 
-h3 {
-  font-size: 2.8rem;
-  text-align: center;
+.hero h1 {
+  font-size: 4rem;
 }
 
-/* Main content */
-
-main {
-  margin-bottom: 7rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-h2 {
-  font-size: 3.6rem;
-  font-weight: bold;
-  display: inline;
-  margin-left: 1.8rem;
-}
-
-section {
-  margin-bottom: 4rem;
-}
-
-.section-intro {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-section ul li {
-  font-size: 1.8rem;
-  margin-left: 7.2rem;
-}
-
-img {
-  width: 3.6rem;
-  height: 100%;
-}
-
-a {
-  font-size: inherit;
-  text-decoration: underline;
-  color: inherit;
-}
-
-.discord-presence-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.discord-presence {
-  margin-top: 4rem;
-  width: 100%;
-  height: auto;
-}
-
-/* Footer */
-
-footer {
-  width: 100vw;
-  padding: 1.6rem;
-  text-align: center;
+.hero h3 {
   font-size: 1.6rem;
 }
 
-/* Animations */
-.blinking {
-  -webkit-animation: blinkingText 1s infinite;
-  animation: blinkingText 1s infinite;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@-webkit-keyframes blinkingText {
-  0% {
-    color: black;
-  }
-  49% {
-    color: black;
-  }
-  50% {
-    color: transparent;
-  }
-  99% {
-    color: transparent;
-  }
-  100% {
-    color: black;
-  }
+section {
+  margin-bottom: 2rem;
 }
 
-@keyframes blinkingText {
-  0% {
-    color: black;
-  }
-  49% {
-    color: black;
-  }
-  50% {
-    color: transparent;
-  }
-  99% {
-    color: transparent;
-  }
-  100% {
-    color: black;
-  }
+.section-intro {
+  display: flex;
+  align-items: center;
 }
 
-/* Media queries */
+.section-intro img {
+  width: 2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.6rem;
+  margin-left: 2rem;
+}
+
+footer {
+  padding: 1rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.discord-presence {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 @media screen and (max-width: 992px) {
-  * {
-    font-size: 40%;
-  }
   .hero {
     height: 30vh;
-    width: 100vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
   }
 
   .discord-presence {
@@ -212,24 +78,31 @@ footer {
 }
 
 @media screen and (max-width: 680px) {
-  * {
-    font-size: 30%;
-  }
   .hero {
     height: 20vh;
-    width: 100vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
   }
 
   .discord-presence {
     width: 80%;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero h3 {
+    font-size: 1.4rem;
+  }
+
+  ul li {
+    font-size: 1.4rem;
+  }
+
+  footer {
+    font-size: 1.2rem;
   }
 }
