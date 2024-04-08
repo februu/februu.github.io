@@ -1,3 +1,0 @@
-html validator
-css optimize
-css minimize
