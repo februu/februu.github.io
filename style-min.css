@@ -31,6 +31,21 @@ body {
   background-color: #191919;
   color: #bbb;
 }
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #313131;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 2rem;
+}
+
 .hero {
   height: 30rem;
   margin: 0 4rem;
@@ -62,7 +77,9 @@ h3 {
   font-size: 2.369rem;
 }
 main {
-  margin: 0 4rem 7rem;
+  margin-bottom: 7rem;
+  width: 100vw;
+  padding: 0 10vw;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -78,67 +95,85 @@ main {
 section {
   margin-bottom: 4rem;
   max-width: 30rem;
-  text-align: justify;
 }
 .section-intro {
   display: flex;
   -ms-flex-align: center;
   -webkit-box-align: center;
   align-items: center;
+  margin-bottom: 0.5rem;
 }
-section ul li {
+section > ul > li {
+  text-align: left;
   font-size: 1rem;
-  margin-left: 5.6rem;
+  margin-left: 1rem;
 }
-section p {
+section > p {
   font-size: 1rem;
-  margin-left: 4.6rem;
+  text-align: justify;
 }
-img {
+.section-intro > img {
   width: 3.6rem;
   height: 100%;
   margin-right: 1rem;
 }
+
 a {
   font-size: inherit;
   background-image: linear-gradient(to right, #11998e, #28a859);
   -webkit-background-clip: text;
   background-clip: text;
+  white-space: nowrap;
 }
+
+a:hover {
+  background-image: linear-gradient(to right, #0c746b, #1a6e3a);
+}
+
 .discord-presence {
-  margin: 4rem 0;
-  width: 100%;
-  max-width: 25rem;
+  margin: 0 auto;
+  max-width: 40vw;
+  min-width: 20vw;
 }
+
 footer {
   padding: 1.6rem;
 }
+
 @media screen and (max-width: 992px) {
-  html {
-    font-size: 14px;
-  }
   h1 {
     font-size: 4.209rem;
-  }
-  h2 {
-    font-size: 2.369rem;
   }
   section {
     margin-bottom: 4rem;
     max-width: 25rem;
     text-align: justify;
   }
+  .discord-presence {
+    margin: 0 auto;
+    max-width: 55vw;
+    min-width: 40vw;
+  }
 }
+
 @media screen and (max-width: 680px) {
-  html {
-    font-size: 12px;
+  h2 {
+    font-size: 1.953rem;
   }
-  section {
-    margin-bottom: 4rem;
-    max-width: 20rem;
-    text-align: justify;
+  h3 {
+    font-size: 2.369rem;
   }
 }
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 3.052rem;
+  }
+  h2 {
+    font-size: 1.953rem;
+  }
+}
+
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
