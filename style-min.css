@@ -64,6 +64,14 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
 }
+
+.avatar-img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
 h1 {
   font-size: 5.61rem;
 }
