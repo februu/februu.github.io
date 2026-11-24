@@ -32,7 +32,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="/style.css" rel="stylesheet" />
 
     <title>febru.dev - All my projects in one place!</title>
@@ -80,27 +79,33 @@
     </nav>
 
     <main class="max-w-225 mx-auto px-4 md:px-12 pt-16 md:pt-24 pb-12">
-        <header class="flex flex-col items-center justify-center gap-6 text-center mb-16">
-            <div class="relative w-16 h-16">
+        <header class="flex flex-col items-center justify-center gap-6 text-center mb-16 motion-safe:animate-blur-in">
+            <button type="button" class="group relative w-16 h-16 cursor-default outline-none"
+                aria-describedby="avatar-tooltip">
                 <img src="https://cms.febru.dev/storage/uploads/2026/01/10/avatar_uid_695802c8d692a_uid_69627212a426e.png"
                     alt="Avatar"
-                    class="absolute top-0 left-0 w-16 h-16 rounded-full animate__animated animate__fadeInDown" />
+                    class="absolute top-0 left-0 w-16 h-16 rounded-full" />
                 <img src="/assets/border.png" alt=""
-                    class="absolute top-0 left-0 w-16 h-16 animate__animated animate__fadeInDown" />
-            </div>
-            <h1 class="text-5xl font-semibold animate__animated animate__fadeInDown">
+                    class="absolute top-0 left-0 w-16 h-16" />
+                <span id="avatar-tooltip" role="tooltip"
+                    class="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-3 whitespace-nowrap text-sm italic text-text-secondary bg-bg-secondary border border-border rounded-full px-3 py-1 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 group-focus:opacity-100 group-focus:translate-y-0 transition duration-200">
+                    hey, it's me!
+                </span>
+            </button>
+            <h1 class="text-5xl font-semibold">
                 [ febru ]
             </h1>
-            <p class="text-text-secondary italic text-lg animate__animated animate__fadeInDown">
-                literally me, can you believe that?
+            <p class="text-text-secondary italic text-lg">
+                would love to be whimsical one day
             </p>
-            <p class="text-text-secondary animate__animated animate__fadeIn">
-                Software developer and&nbsp;music producer. CS&nbsp;engineer
-                (AGH, Kraków,&nbsp;PL). Overthinker. Music&nbsp;lover. Art&nbsp;enjoyer. Lately, I've&nbsp;been coding, learning
-                about&nbsp;markets, figuring out&nbsp;life, and&nbsp;diving into
-                psychology -&nbsp;maybe I'll&nbsp;understand myself&nbsp;someday.
+            <p class="text-text-secondary">
+                Software developer and&nbsp;music producer. Nightly&nbsp;overthinker. Ice&nbsp;tea addict
+                and&nbsp;ASMR&nbsp;connoisseur. Lately, I've&nbsp;been coding, figuring out&nbsp;life, doing
+                random side&nbsp;quests and&nbsp;diving into&nbsp;psychology. Want to&nbsp;collaborate?
+                Say hi at&nbsp;<a href="mailto:contact@febru.dev"
+                    class="text-text-primary underline hover:text-accent transition-colors">contact@febru.dev</a>&nbsp;💜
             </p>
-            <div class="flex gap-4 text-3xl text-text-secondary animate__animated animate__fadeIn">
+            <div class="flex gap-4 text-3xl text-text-secondary">
                 <a href="https://discord.com/users/175652881456693249" target="_blank"
                     class="hover:text-accent hover:rotate-360 transition-transform duration-300"
                     aria-label="Discord">

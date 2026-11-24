@@ -9,6 +9,15 @@
     --color-text-secondary: #a3a3a3;
     --color-border: #262626;
     --color-accent: #b89cff;
+
+    --animate-blur-in: blur-in 1200ms cubic-bezier(0.25, 1, 0.5, 1) backwards;
+
+    @keyframes blur-in {
+        from {
+            opacity: 0;
+            filter: blur(12px);
+        }
+    }
 }
 
 .border-gradient-hover {
